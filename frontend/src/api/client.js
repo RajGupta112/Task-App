@@ -1,7 +1,9 @@
 import axios from "axios";
 
+// This will look for VITE_API_URL in production, 
+// and fallback to localhost if it's not found (local development)
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
 });
 
 // Automatically add the token to every request
