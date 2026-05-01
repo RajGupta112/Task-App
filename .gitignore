@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+target/
+bin/
+dist/
+
+# Environment Variables (CRITICAL)
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
